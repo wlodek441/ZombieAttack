@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class MovementJoystick : MonoBehaviour
+public class JoystickMovement : MonoBehaviour
 {
     public GameObject joystick;
     public GameObject joystickBG;

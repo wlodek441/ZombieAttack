@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovementPlayer : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    public MovementJoystick movementJoystick;
+    public JoystickMovement movementJoystick;
     public float playerSpeed;
     private Rigidbody2D rb;
 
@@ -20,6 +20,8 @@ public class MovementPlayer : MonoBehaviour
         if (movementJoystick.joystickVec.y != 0)
         {
             rb.velocity = new Vector2(movementJoystick.joystickVec.x * playerSpeed, movementJoystick.joystickVec.y * playerSpeed);
+
+            //transform.rotation = Quaternion.LookRotation(Vector3.forward, movementJoystick.joystickVec);
         }
         else
         {

@@ -50,3 +50,6 @@ TagManager:
   - name: Zombie
     uniqueID: 2235043867
     locked: 0
+  - name: Joystick
+    uniqueID: 3408980893
+    locked: 0
