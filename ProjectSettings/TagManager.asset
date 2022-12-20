@@ -53,3 +53,6 @@ TagManager:
   - name: Joystick
     uniqueID: 3408980893
     locked: 0
+  - name: Tree
+    uniqueID: 4256503903
+    locked: 0
