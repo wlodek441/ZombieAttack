@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
     public JoystickMovement movementJoystick;
     public float playerSpeed;
     private Rigidbody2D rb;
+    public Transform bulletSpawn;
+    public Object bullet4x4;
 
     // Start is called before the first frame update   
     void Start()
@@ -22,11 +24,19 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(movementJoystick.joystickVec.x * playerSpeed, movementJoystick.joystickVec.y * playerSpeed);
 
             //transform.rotation = Quaternion.LookRotation(Vector3.forward, movementJoystick.joystickVec);
+            fire();
+
         }
         else
         {
             rb.velocity = Vector2.zero;
         }
+
+    }
+
+    private void fire()
+    {
+        Instantiate(bullet4x4, bulletSpawn.transform.position, transform.rotation);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
