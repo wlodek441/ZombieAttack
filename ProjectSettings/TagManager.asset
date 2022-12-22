@@ -47,12 +47,18 @@ TagManager:
   - name: Player
     uniqueID: 287890065
     locked: 0
+  - name: Gun
+    uniqueID: 1918541967
+    locked: 0
+  - name: Sight
+    uniqueID: 163988621
+    locked: 0
   - name: Zombie
     uniqueID: 2235043867
     locked: 0
-  - name: Joystick
-    uniqueID: 3408980893
-    locked: 0
   - name: Tree
     uniqueID: 4256503903
+    locked: 0
+  - name: Joystick
+    uniqueID: 3408980893
     locked: 0
