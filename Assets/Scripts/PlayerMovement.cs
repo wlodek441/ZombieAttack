@@ -28,4 +28,11 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = Vector2.zero;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        print("Player Collider Trigerred");
+        print("Game Over");
+        Destroy(gameObject);
+    }
 }

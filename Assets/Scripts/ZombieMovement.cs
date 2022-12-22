@@ -24,4 +24,9 @@ public class ZombieMovement : MonoBehaviour
 
         transform.Translate(Vector3.left * Time.deltaTime * speed, Space.Self);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        print("Zombie Collider Trigerred");
+    }
 }
